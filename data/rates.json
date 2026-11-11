@@ -1,0 +1,229 @@
+{
+ "note": "Each rate was read from the provider's own public page. 'value' is the yield or rate the provider publishes. g12 and ytd are past growth, not promises. Entries with value null have no published yield; open the provider link.",
+ "rates": [
+  {
+   "id": "proven-mm-jmd",
+   "provider": "Proven Wealth",
+   "product": "Proven Select Money Market (JMD)",
+   "cur": "JMD",
+   "kind": "yield",
+   "label": "Yield (est. annual income)",
+   "value": 5.89,
+   "g12": 5.87,
+   "ytd": 4.95,
+   "asOf": "November 9, 2026",
+   "source": "https://www.provenwealth.com/rates/",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "proven-mm-usd",
+   "provider": "Proven Wealth",
+   "product": "Proven Select Money Market (USD)",
+   "cur": "USD",
+   "kind": "yield",
+   "label": "Yield (est. annual income)",
+   "value": 5.28,
+   "g12": 2.16,
+   "ytd": 2.16,
+   "asOf": "November 9, 2026",
+   "source": "https://www.provenwealth.com/rates/",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "scotia-mm-jmd",
+   "provider": "Scotia Investments",
+   "product": "Scotia Premium Money Market Fund (JMD)",
+   "cur": "JMD",
+   "kind": "yield",
+   "label": "Yield",
+   "value": 4.39,
+   "g12": 4.25,
+   "ytd": 3.61,
+   "asOf": "November 9, 2026",
+   "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "scotia-mm-usd",
+   "provider": "Scotia Investments",
+   "product": "Scotia Money Market Fund, Class A (USD)",
+   "cur": "USD",
+   "kind": "growth",
+   "label": "No yield published",
+   "value": null,
+   "g12": 3.29,
+   "ytd": 2.8,
+   "asOf": "November 9, 2026",
+   "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "barita-mm-jmd",
+   "provider": "Barita Investments",
+   "product": "Barita Money Market Fund (JMD)",
+   "cur": "JMD",
+   "kind": "yield",
+   "label": "Yield",
+   "value": 4.36,
+   "g12": 4.88,
+   "ytd": 3.75,
+   "asOf": "November 6, 2026",
+   "min": "J$15,000",
+   "source": "https://www.barita.com/rates/"
+  },
+  {
+   "id": "gk-mm-jmd",
+   "provider": "GK Capital Management",
+   "product": "GK Jamaican Dollar Money Market Fund",
+   "cur": "JMD",
+   "kind": "growth",
+   "label": "No yield published",
+   "value": null,
+   "g12": 6.33,
+   "ytd": 5.06,
+   "asOf": "November 5, 2026",
+   "source": "https://gk-capital.com/gk-mutual-funds/",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "mayberry-mm-usd",
+   "provider": "Mayberry Investments",
+   "product": "Mayberry USD Money Market",
+   "cur": "USD",
+   "kind": "rate",
+   "label": "Annual rate (portfolio performance)",
+   "value": 3.0,
+   "asOf": "June 30, 2026",
+   "source": "https://www.mayberryinv.com/our-products/asset-management/investment-calculator/",
+   "note": "Mayberry says this is a portfolio performance rate as of June 30, 2026, used in its calculator. Not guaranteed."
+  },
+  {
+   "id": "jmmb-taxshelter",
+   "provider": "JMMB",
+   "product": "JMMB money market: Tax Shelter Rate (JA)",
+   "cur": "JMD",
+   "kind": "rate",
+   "label": "Rate",
+   "value": 1.02,
+   "asOf": "November 10, 2026",
+   "source": "https://jm.jmmb.com/rates-fees",
+   "note": "This is the only money market rate JMMB lists on its public rates page. Ask JMMB for Sure Investor rates.",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true
+  },
+  {
+   "id": "sagicor-income-jmd",
+   "provider": "Sagicor Investments",
+   "product": "Sagicor Sigma Income (JMD)",
+   "cur": "JMD",
+   "kind": "growth",
+   "label": "Yield listed as 0.00%",
+   "value": null,
+   "g12": 0.16,
+   "ytd": -0.21,
+   "asOf": "November 9, 2026",
+   "source": "https://www.sagicor.com/en-jm/personal-solution/investment/sigma-global-funds",
+   "note": "Sagicor closed its Sigma Money Market portfolio on July 27, 2026 and moved it into Sigma Income.",
+   "read": "2026-11-11T06:06:32Z",
+   "auto": true,
+   "listedYield": 0.0
+  },
+  {
+   "id": "vm-protector-jmd",
+   "provider": "VM Wealth",
+   "product": "VM Wealth Classic Protector (JMD, short-term fixed income)",
+   "cur": "JMD",
+   "kind": "growth",
+   "label": "No yield published",
+   "value": null,
+   "g12": 12.7,
+   "ytd": 17.39,
+   "asOf": "June 30, 2026",
+   "source": "https://vmwealth.myvmgroup.com/personal-solutions/unit-trust/",
+   "note": "VM shows returns to June 30, 2026. Its US$ Cash Management fund has no published yield yet."
+  },
+  {
+   "id": "ncb-m-jmd",
+   "provider": "NCB Capital Markets",
+   "product": "NCB CAP M Fund (JMD money market)",
+   "cur": "JMD",
+   "kind": "none",
+   "label": "See provider",
+   "value": null,
+   "asOf": null,
+   "source": "https://www.jncb.com/capital-markets/"
+  },
+  {
+   "id": "ncb-xm-usd",
+   "provider": "NCB Capital Markets",
+   "product": "NCB CAP xM Fund (USD money market)",
+   "cur": "USD",
+   "kind": "none",
+   "label": "See provider",
+   "value": null,
+   "asOf": null,
+   "source": "https://www.jncb.com/capital-markets/"
+  },
+  {
+   "id": "jn-local-jmd",
+   "provider": "JN Fund Managers",
+   "product": "JN Local Money Market Fund (JMD)",
+   "cur": "JMD",
+   "kind": "none",
+   "label": "See provider",
+   "value": null,
+   "asOf": null,
+   "source": "https://www.jnfunds.com/local-money-market-fund-quick-facts/"
+  },
+  {
+   "id": "jn-global-usd",
+   "provider": "JN Fund Managers",
+   "product": "JN Global Money Market Fund (USD)",
+   "cur": "USD",
+   "kind": "none",
+   "label": "See provider",
+   "value": null,
+   "asOf": null,
+   "source": "https://www.jnfunds.com/global-money-market-fund/"
+  }
+ ],
+ "tbills": {
+  "auction": "November 4, 2026",
+  "settled": "November 6, 2026",
+  "next": "December 2, 2026",
+  "source": "https://boj.org.jm/treasury-bill-results-of-auction-04-november-2026/",
+  "items": [
+   {
+    "term": "91-day",
+    "matures": "February 5, 2027",
+    "avg": 6.43463
+   },
+   {
+    "term": "182-day",
+    "matures": "May 7, 2027",
+    "avg": 6.10439
+   },
+   {
+    "term": "272-day",
+    "matures": "August 5, 2027",
+    "avg": 6.31677
+   }
+  ]
+ },
+ "tax": {
+  "resident": 25,
+  "nonresident": 25,
+  "usTreaty": 12.5,
+  "text": "Jamaica withholds 25% tax on interest paid to resident individuals by banks and other financial institutions. Interest paid to non-resident individuals is generally also withheld at 25%, but tax treaties can lower it (PwC lists 12.5% for US residents). Ask the provider which rate applies to you.",
+  "sources": [
+   "https://taxsummaries.pwc.com/jamaica/individual/income-determination",
+   "https://taxsummaries.pwc.com/jamaica/corporate/withholding-taxes"
+  ]
+ },
+ "fetched": "2026-11-11T06:06:32Z"
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jamaica Money Market</title>
+  <meta name="description" content="Jamaican money market fund rates, Jamaica Stock Exchange prices, and US dollar to Jamaican dollar exchange rates, with sources and dates.">
+  <meta name="theme-color" content="#0b6b34">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="JA Money">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem('jm-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="" width="40" height="40">
+      <div>
+        <b>Jamaica Money Market</b>
+        <small>Rates · Stocks · Exchange</small>
+      </div>
+    </div>
+    <button type="button" id="themeBtn" class="pill-btn" aria-pressed="false">Dark mode</button>
+  </header>
+  <div class="stripe" aria-hidden="true"></div>
+
+  <nav class="tabs" aria-label="Sections">
+    <button type="button" data-tab="rates" class="on"><span class="ti">%</span>Rates</button>
+    <button type="button" data-tab="stocks"><span class="ti">▲</span>Stocks</button>
+    <button type="button" data-tab="fx"><span class="ti">⇄</span>Exchange</button>
+    <button type="button" data-tab="calc"><span class="ti">＝</span>Calculator</button>
+    <button type="button" data-tab="more"><span class="ti">☰</span>More</button>
+  </nav>
+
+  <main id="main">
+    <!-- RATES -->
+    <section id="tab-rates" class="tab on" aria-labelledby="h-rates">
+      <h1 id="h-rates">Money market rates</h1>
+      <p class="lead">Jamaican savings and money market options in J$ and US$. Every number links to where it came from, with its date.</p>
+
+      <h2>Bank of Jamaica benchmarks</h2>
+      <div class="grid4" id="bojCards"><div class="card skel">Loading…</div></div>
+
+      <h2>Treasury bills <small id="tbDate"></small></h2>
+      <div class="card" id="tbCard">Loading…</div>
+
+      <h2>Funds and accounts</h2>
+      <div class="filters" role="group" aria-label="Currency">
+        <button type="button" class="chip on" data-cur="all">All</button>
+        <button type="button" class="chip" data-cur="JMD">J$ only</button>
+        <button type="button" class="chip" data-cur="USD">US$ only</button>
+        <label class="sortlbl">Sort
+          <select id="rateSort">
+            <option value="value">Highest yield</option>
+            <option value="provider">Provider A–Z</option>
+          </select>
+        </label>
+      </div>
+      <div id="rateList" class="list"></div>
+      <div class="note" id="taxNote"></div>
+      <p class="fine" id="ratesUpdated"></p>
+    </section>
+
+    <!-- STOCKS -->
+    <section id="tab-stocks" class="tab" aria-labelledby="h-stocks" hidden>
+      <h1 id="h-stocks">Jamaica Stock Exchange</h1>
+      <p class="lead" id="jseMeta">Loading closing prices…</p>
+
+      <h2>Market indices</h2>
+      <div class="idx" id="idxList"></div>
+
+      <div class="two">
+        <div><h2>Top gainers</h2><div id="gainers" class="mini"></div></div>
+        <div><h2>Top losers</h2><div id="losers" class="mini"></div></div>
+      </div>
+
+      <h2>All stocks</h2>
+      <div class="searchrow">
+        <input id="stockSearch" type="search" placeholder="Search by symbol or company name" aria-label="Search stocks" autocomplete="off">
+      </div>
+      <div class="filters" role="group" aria-label="Market">
+        <button type="button" class="chip on" data-mkt="all">All</button>
+        <button type="button" class="chip" data-mkt="watch">★ My watchlist</button>
+        <button type="button" class="chip" data-mkt="Main">Main</button>
+        <button type="button" class="chip" data-mkt="Junior">Junior</button>
+        <button type="button" class="chip" data-mkt="USD">US$ market</button>
+      </div>
+      <p class="fine" id="stockCount"></p>
+      <div id="stockList" class="stocks"></div>
+      <p class="fine">Prices are end-of-day from the Jamaica Stock Exchange. This app shows information only. It never places trades.</p>
+    </section>
+
+    <!-- FX -->
+    <section id="tab-fx" class="tab" aria-labelledby="h-fx" hidden>
+      <h1 id="h-fx">Exchange rates</h1>
+      <p class="lead">How many Jamaican dollars (J$) one unit of each currency buys.</p>
+
+      <h2>Converter</h2>
+      <div class="card form">
+        <div class="row">
+          <label>Amount<input id="fxAmt" type="number" inputmode="decimal" min="0" step="any" value="100"></label>
+          <label>From<select id="fxFrom"><option>USD</option><option>GBP</option><option>CAD</option><option>EUR</option><option>JMD</option></select></label>
+          <button type="button" id="fxSwap" class="swap" aria-label="Swap currencies">⇄</button>
+          <label>To<select id="fxTo"><option>JMD</option><option>USD</option><option>GBP</option><option>CAD</option><option>EUR</option></select></label>
+        </div>
+        <label>Rate to use
+          <select id="fxSrc">
+            <option value="live">Live market rate (mid-market)</option>
+            <option value="bojsell">Bank of Jamaica – sell rate</option>
+            <option value="bojbuy">Bank of Jamaica – buy rate</option>
+          </select>
+        </label>
+        <div class="result" id="fxOut" aria-live="polite">—</div>
+        <p class="fine">Banks and cambios add their own spread, so the amount you actually get will differ a little.</p>
+      </div>
+
+      <h2>Bank of Jamaica rates <small id="bojFxDate"></small></h2>
+      <div class="card"><table class="tbl" id="bojFx"><tr><td>Loading…</td></tr></table>
+        <p class="fine" id="bojFxNote"></p></div>
+
+      <h2>Live market rates</h2>
+      <div class="card"><table class="tbl" id="liveFx"><tr><td>Loading…</td></tr></table>
+        <p class="fine" id="liveFxNote"></p>
+        <button type="button" class="btn ghost" id="fxRefresh">Refresh live rates</button></div>
+    </section>
+
+    <!-- CALC -->
+    <section id="tab-calc" class="tab" aria-labelledby="h-calc" hidden>
+      <h1 id="h-calc">Interest calculator</h1>
+      <p class="lead">See roughly what a money market investment could earn. Rates are not guaranteed, so treat this as an estimate.</p>
+      <div class="card form">
+        <label>Pick a rate from the list (optional)
+          <select id="cPick"><option value="">Type my own rate</option></select>
+        </label>
+        <div class="row">
+          <label>Amount<input id="cAmt" type="number" inputmode="decimal" min="0" step="any" value="1000000"></label>
+          <label>Currency<select id="cCur"><option value="JMD">J$ (JMD)</option><option value="USD">US$ (USD)</option></select></label>
+        </div>
+        <div class="row">
+          <label>Yearly rate (%)<input id="cRate" type="number" inputmode="decimal" min="0" max="100" step="0.01" value="5.00"></label>
+          <label>Months<input id="cMonths" type="number" inputmode="numeric" min="1" max="600" step="1" value="12"></label>
+        </div>
+        <div class="row">
+          <label>Interest
+            <select id="cComp"><option value="monthly">Reinvested each month</option><option value="simple">Simple (not reinvested)</option></select>
+          </label>
+          <label>Tax taken out
+            <select id="cTax">
+              <option value="25">25% (Jamaica resident)</option>
+              <option value="12.5">12.5% (US resident, treaty rate)</option>
+              <option value="0">None</option>
+            </select>
+          </label>
+        </div>
+        <div class="calcout" id="cOut" aria-live="polite"></div>
+        <p class="fine" id="cTaxNote"></p>
+      </div>
+    </section>
+
+    <!-- MORE -->
+    <section id="tab-more" class="tab" aria-labelledby="h-more" hidden>
+      <h1 id="h-more">More</h1>
+      <div class="card">
+        <h2>Put this app on your home screen</h2>
+        <p><b>iPhone or iPad (Safari):</b> tap the Share button <span aria-hidden="true">(square with an arrow)</span>, then <b>Add to Home Screen</b>, then <b>Add</b>.</p>
+        <p><b>Android phone or tablet (Chrome):</b> tap the three dots at the top right, then <b>Install app</b> or <b>Add to Home screen</b>.</p>
+        <p><b>Windows PC (Chrome or Edge):</b> click the install icon at the right end of the address bar.</p>
+        <button type="button" class="btn" id="installBtn" hidden>Install now</button>
+      </div>
+      <div class="card">
+        <h2>How fresh is the data?</h2>
+        <ul class="plain" id="freshList"><li>Loading…</li></ul>
+        <button type="button" class="btn ghost" id="reloadAll">Check for new data</button>
+      </div>
+      <div class="card">
+        <h2>Sources</h2>
+        <ul class="plain src" id="srcList"></ul>
+      </div>
+      <div class="card">
+        <h2>Your privacy</h2>
+        <p>Your watchlist and settings are saved only on this device. The app never asks for your TRN, Social Security number, bank or card numbers, PINs, or passwords, and it has no login.</p>
+        <button type="button" class="btn ghost" id="clearData">Clear my watchlist and settings</button>
+      </div>
+      <div class="card warn">
+        <h2>Important</h2>
+        <p><b>Information only, not financial advice.</b> Rates and prices change and can be out of date. Past growth does not promise future returns. Unit trusts and money market funds are not bank deposits and are not insured by the JDIC. Confirm every rate with the provider before you invest. This app does not buy, sell, or place any orders.</p>
+      </div>
+      <p class="fine center">Jamaica Money Market · <span id="ver"></span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
