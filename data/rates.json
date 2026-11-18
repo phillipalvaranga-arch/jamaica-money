@@ -8,12 +8,12 @@
    "cur": "JMD",
    "kind": "yield",
    "label": "Yield (est. annual income)",
-   "value": 5.83,
-   "g12": 5.86,
+   "value": 5.8,
+   "g12": 5.79,
    "ytd": 5.08,
-   "asOf": "November 16, 2026",
+   "asOf": "November 17, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -23,12 +23,12 @@
    "cur": "USD",
    "kind": "yield",
    "label": "Yield (est. annual income)",
-   "value": 5.25,
+   "value": 5.28,
    "g12": 1.92,
    "ytd": 1.92,
-   "asOf": "November 16, 2026",
+   "asOf": "November 17, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -38,12 +38,12 @@
    "cur": "JMD",
    "kind": "yield",
    "label": "Yield",
-   "value": 4.37,
-   "g12": 4.24,
-   "ytd": 3.68,
-   "asOf": "November 16, 2026",
+   "value": 4.39,
+   "g12": 4.22,
+   "ytd": 3.69,
+   "asOf": "November 17, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -54,11 +54,11 @@
    "kind": "growth",
    "label": "No yield published",
    "value": null,
-   "g12": 3.31,
-   "ytd": 2.87,
-   "asOf": "November 16, 2026",
+   "g12": 3.3,
+   "ytd": 2.88,
+   "asOf": "November 17, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -74,7 +74,7 @@
    "asOf": "November 13, 2026",
    "min": "J$15,000",
    "source": "https://www.barita.com/rates/",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -86,10 +86,10 @@
    "label": "No yield published",
    "value": null,
    "g12": 6.46,
-   "ytd": 5.69,
-   "asOf": "November 13, 2026",
+   "ytd": 5.76,
+   "asOf": "November 17, 2026",
    "source": "https://gk-capital.com/gk-mutual-funds/",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -112,10 +112,10 @@
    "kind": "rate",
    "label": "Rate",
    "value": 1.02,
-   "asOf": "November 17, 2026",
+   "asOf": "November 18, 2026",
    "source": "https://jm.jmmb.com/rates-fees",
    "note": "This is the only money market rate JMMB lists on its public rates page. Ask JMMB for Sure Investor rates.",
-   "read": "2026-11-18T03:49:09Z",
+   "read": "2026-11-18T21:30:38Z",
    "auto": true
   },
   {
@@ -227,5 +227,5 @@
    "https://taxsummaries.pwc.com/jamaica/corporate/withholding-taxes"
   ]
  },
- "fetched": "2026-11-18T03:49:09Z"
+ "fetched": "2026-11-18T21:30:38Z"
 }
