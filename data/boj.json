@@ -4,12 +4,12 @@
   "since": "18 November 2026",
   "next": "18 December 2026",
   "source": "https://boj.org.jm/core-functions/monetary-policy/policy-schedule/summary-of-decisions/",
-  "read": "2026-11-19T21:43:24Z"
+  "read": "2026-11-20T00:56:19Z"
  },
  "inflation": {
   "rate": 8.2,
   "month": "October 2026",
-  "read": "2026-11-19T21:43:24Z",
+  "read": "2026-11-20T00:56:19Z",
   "source": "https://boj.org.jm/"
  },
  "target": [
@@ -36,7 +36,7 @@
     "sell": 175.4067
    }
   },
-  "read": "2026-11-19T21:43:24Z",
+  "read": "2026-11-20T00:56:19Z",
   "note": "Bank of Jamaica weighted average buy and sell rates for the day, as shown on the BOJ home page.",
   "source": "https://boj.org.jm/",
   "more": "https://boj.org.jm/market/foreign-exchange/daily-fx-spot-trading-summary/"
@@ -47,5 +47,5 @@
   "read": "2026-11-18T03:49:09Z",
   "source": "https://boj.org.jm/category/notices/money-market/"
  },
- "fetched": "2026-11-19T21:43:24Z"
+ "fetched": "2026-11-20T00:56:19Z"
 }
