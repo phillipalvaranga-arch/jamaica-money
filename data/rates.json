@@ -13,7 +13,7 @@
    "ytd": 5.21,
    "asOf": "November 20, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -28,7 +28,7 @@
    "ytd": 2.16,
    "asOf": "November 20, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -43,7 +43,7 @@
    "ytd": 3.73,
    "asOf": "November 20, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -58,7 +58,7 @@
    "ytd": 2.91,
    "asOf": "November 20, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -74,7 +74,7 @@
    "asOf": "November 20, 2026",
    "min": "J$15,000",
    "source": "https://www.barita.com/rates/",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -89,7 +89,7 @@
    "ytd": 5.78,
    "asOf": "November 18, 2026",
    "source": "https://gk-capital.com/gk-mutual-funds/",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -115,7 +115,7 @@
    "asOf": "November 23, 2026",
    "source": "https://jm.jmmb.com/rates-fees",
    "note": "This is the only money market rate JMMB lists on its public rates page. Ask JMMB for Sure Investor rates.",
-   "read": "2026-11-24T04:06:05Z",
+   "read": "2026-11-24T06:18:36Z",
    "auto": true
   },
   {
@@ -227,5 +227,5 @@
    "https://taxsummaries.pwc.com/jamaica/corporate/withholding-taxes"
   ]
  },
- "fetched": "2026-11-24T04:06:05Z"
+ "fetched": "2026-11-24T06:18:36Z"
 }
