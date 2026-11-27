@@ -13,7 +13,7 @@
    "ytd": 5.28,
    "asOf": "November 25, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -28,7 +28,7 @@
    "ytd": 2.24,
    "asOf": "November 25, 2026",
    "source": "https://www.provenwealth.com/rates/",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -43,7 +43,7 @@
    "ytd": 3.79,
    "asOf": "November 25, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -58,7 +58,7 @@
    "ytd": 2.96,
    "asOf": "November 25, 2026",
    "source": "https://jm.scotiabank.com/scotia-investments/fund-prices.html",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -68,13 +68,13 @@
    "cur": "JMD",
    "kind": "yield",
    "label": "Yield",
-   "value": 4.33,
-   "g12": 4.85,
-   "ytd": 4.04,
-   "asOf": "November 25, 2026",
+   "value": 4.32,
+   "g12": 4.83,
+   "ytd": 4.02,
+   "asOf": "November 27, 2026",
    "min": "J$15,000",
    "source": "https://www.barita.com/rates/",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -85,11 +85,11 @@
    "kind": "growth",
    "label": "No yield published",
    "value": null,
-   "g12": 6.47,
-   "ytd": 5.78,
-   "asOf": "November 18, 2026",
+   "g12": 7.59,
+   "ytd": 7.04,
+   "asOf": "November 26, 2026",
    "source": "https://gk-capital.com/gk-mutual-funds/",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -112,10 +112,10 @@
    "kind": "rate",
    "label": "Rate",
    "value": 1.02,
-   "asOf": "November 26, 2026",
+   "asOf": "November 27, 2026",
    "source": "https://jm.jmmb.com/rates-fees",
    "note": "This is the only money market rate JMMB lists on its public rates page. Ask JMMB for Sure Investor rates.",
-   "read": "2026-11-27T04:27:56Z",
+   "read": "2026-11-27T22:14:31Z",
    "auto": true
   },
   {
@@ -227,5 +227,5 @@
    "https://taxsummaries.pwc.com/jamaica/corporate/withholding-taxes"
   ]
  },
- "fetched": "2026-11-27T04:27:56Z"
+ "fetched": "2026-11-27T22:14:31Z"
 }
